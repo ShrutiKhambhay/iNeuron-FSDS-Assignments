@@ -1,0 +1,74 @@
+Q.1. What are keywords in python? Using the keyword library, print all the python keywords.
+A.1 Keywords in Python are reserved words that have predefined meanings and cannot be used as identifiers (e.g., variable names or function names). 
+To print all the keywords in python, you can run the below piece of code..
+import keyword
+print(keyword.kwlist)
+
+Q.2. What are the rules to create variables in python?
+A.2 i) Should not start with numbers 
+ii) Should start with alphabets or underscore.
+iii) Should not be one among the reserved keywords
+iv) Should contain only alphabets, digits or underscore.
+
+Q.3. What are the standards and conventions followed for the nomenclature of variables in python to improve code readability and maintainability?
+A.3 Use descriptive names use lowercase letters and underscores, avoid using reserved keywords, use constants in uppercase and use any one of the  snake case or camel case consistently.
+
+Q.4. What will happen if a keyword is used as a variable name?
+A.4 Your interpreter will throw an error stating invalid syntax.
+
+Q.5. For what purpose def keyword is used?
+A.5 'def' in python is used to declare a function.
+
+Q.6. What is the operation of this special character ‘\’?
+A.6 The special character '\' is used as an escape character. It is used to escape or indicate special characters or sequences within a string or character literal. The '\' is followed by another character to create an escape sequence.
+
+Q.7. Give an example of the following conditions:
+(i) Homogeneous list
+(ii) Heterogeneous set
+(iii) Homogeneous tuple
+A.7 (i) [1,2,3,7,10,15]
+    (ii) {"Hello",3,True}
+    (iii) ("Hello","Hi")
+
+Q.8. Explain the mutable and immutable data types with proper explanation & examples.
+A.8 Immutable data types are those which can't be modified. On trying to modify or reassign, new reference gets created.
+Eg. Int, float, tuple etc.
+Mutable data types are those which can be modified and on modification, it does not create any new instance but directly impacts the object itself. Eg. List, Dictionary, set etc.
+
+Q.9. Write a code to create the given structure using only for loop.
+    *
+   ***
+  *****
+ *******
+*********
+A.9  
+Code:
+Num = int(input())
+for i in range(0,Num):
+    for j in range(0,Num-i-1):
+        print(end=" ")
+    for k in range(0,i*2+1):
+        print("*",end="")
+    print("\r")
+
+Q.10. Write a code to create the given structure using while loop.
+|||||||||
+ |||||||
+  |||||
+   |||
+    |
+A.10 
+Code:
+Num = int(input())
+i=Num
+while(i>0):
+    j=0
+    while(j<Num-i):
+        print(end=" ")
+        j=j+1
+    j=0
+    while(j<i*2-1):
+        print("|",end="")
+        j=j+1
+    print("\r")
+    i=i-1

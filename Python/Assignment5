@@ -1,0 +1,29 @@
+1. What does an empty dictionary's code look like?
+A.1 An empty dictionary is often represented by two empty curly brackets
+d = {} or d = dict()
+
+2. What is the value of a dictionary value with the key 'foo' and the value 42?
+A.2 {'foo':42}
+
+3. What is the most significant distinction between a dictionary and a list?
+A.3 Dictionaries are represented by {} where as listed are represented by []. The Items stored in a dictionary are Unordered , while the items in a list are ordered
+
+4. What happens if you try to access spam['foo'] if spam is {'bar': 100}?
+A.4 KeyError: 'foo'
+
+5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.keys()?
+A.5 There is no difference . The operator checks whether a value exits as a key in the dictionary or not
+
+6. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.values()?
+A.6 'cat' in spam checks whether there is a 'cat' key in the dictionary, while 'cat' in spam.values() checks whether there is a value 'cat' for one of the keys in spam.
+
+7. What is a shortcut for the following code?
+if 'color' not in spam:
+spam['color'] = 'black'
+A.7 spam.setdefault('color','black')
+
+8. How do you &quot;pretty print&quot; dictionary values using which module and function?
+A.8 we can pretty print a dictionary using three functions
+ - by using pprint() function of pprint module
+ - by using dumps() method of json module
+ - by using dumps() method of yaml module

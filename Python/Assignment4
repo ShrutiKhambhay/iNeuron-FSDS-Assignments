@@ -1,0 +1,57 @@
+1. What exactly is []?
+A.1 The empty list represented by [] is a list that contains no items. This is similar to '' which represents an empty string
+
+2. In a list of values stored in a variable called spam, how would you assign the value &#39;hello&#39; as thethird value? (Assume [2, 4, 6, 8, 10] are in spam.)
+A.2 spam=[2,4,6,8,10]
+    print(spam)
+    spam[2]='hello' 
+    print(spam)
+    o/p: [2, 4, 6, 8, 10]
+         [2, 4, 'hello', 8, 10]
+
+Let's pretend the spam includes the list ['a','b','c','d'] for the next three queries.
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+A.3 spam[int(int('3'*2)//11)] -> d
+
+4. What is the value of spam[-1]?
+A.4 spam[-1] -> d
+
+5. What is the value of spam[:2]?
+A.5 ['a', 'b']
+
+Let's pretend bacon has the list [3.14, 'cat', 11, 'cat,' True] for the next three questions.
+6. What is the value of bacon.index('cat')?
+A.6 bacon.index('cat') -> 1
+
+7. How does bacon.append(99) change the look of the list value in bacon?
+A.7 [3.14, 'cat', 11, 'cat', True, 99]
+
+8. How does bacon.remove('cat') change the look of the list in bacon?
+A.8 [3.14, 11, 'cat', True, 99]
+
+9. What are the list concatenation and list replication operators?
+A.9 The operator for list concatenation is +, while the operator for replication is *.
+
+10. What is difference between the list methods append() and insert()?
+A.10 While append() will add values only to the end of a list, insert() can add them anywhere in the list.
+
+11. What are the two methods for removing items from a list?
+A.11 The del statement and the remove() method are two ways to remove values from a list
+
+12. Describe how list values and string values are identical.
+A.12 Both lists and strings can be passed to len() function, have indexes and slices, be used in for loops, be concatenated or replicated, and be used with the in and not in operators.
+
+13. What's the difference between tuples and lists?
+A.13 Lists are Mutable, Indexable and Slicable. they can have values added, removed, or changed. Tuples are Immutable but Indexable and Slicable. the tuple values cannot be changed at all. Also, tuples are represented using parentheses, (), while lists use the square brackets, [].
+
+14. How do you type a tuple value that only contains the integer 42?
+A.14 (42,) The trailing comma is mandatory. otherwise its considered as a int by python Interpreter
+
+15. How do you get a list value's tuple form? How do you get a tuple value's list form?
+A.15 The tuple() and list() functions, respectively are used to convert a list to tuple and vice versa
+
+16. Variables that "contain" list values are not necessarily lists themselves. Instead, what do they contain?
+A.16 They contain references to list values.
+
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+A.17The copy.copy() function will do a shallow copy of a list, while the copy.deepcopy() function will do a deep copy of a list. That is, only copy.deepcopy() will duplicate any lists inside the list.
